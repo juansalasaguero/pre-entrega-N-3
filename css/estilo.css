@@ -1,0 +1,548 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    font-family: "Poppins-ligth";
+    background-image: url(../img/low-poly-grid-haikei.svg);
+    background-size: cover;
+}
+@font-face {
+    font-family: "Poppins-Light";
+    src: url("../assets/Poppins-Light.ttf");
+}
+
+@font-face {
+    font-family: "SignikaNegative-VariableFont_wght";
+    src: url("../assets/SignikaNegative-VariableFont_wght.ttf");
+}
+
+h1, h2, h3{
+    font-family: "SignikaNegative-VariableFont_wght";
+    src: url("../assets/SignikaNegative-VariableFont_wght")
+}
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 4fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header"
+      "section2 section1 aside"
+      "section2 footer footer";
+      border: solid black;
+  }
+  .btn-wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: green;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+  }
+  .btn-wps:hover{
+    text-decoration: none;
+    color:green;
+    background-color: white;
+  }
+.header1 {
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: header;
+    padding: 10px;
+    margin: 5px; 
+    position: sticky;
+    top: 5px;
+    background-color: rgb(209, 209, 209);
+    opacity: 0.5;
+}
+.header1:hover{
+    opacity: 1;
+}
+.caja1{
+    border: solid black 1px;
+    justify-content: space-evenly;
+    left: 10px;
+    display:inline;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.logo{
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+}
+.texto{
+    display: inline-block;
+    opacity: 15%;
+}
+.informacion_empresarial{
+    border: dotted grey 1px; 
+}
+.menu{
+    list-style-type: none;
+}
+.menu li{
+    display: inline-block;
+    border: solid black 1px;
+    padding: 5px;
+    margin: 5px;
+}
+.menu li a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(44, 108, 226);
+}
+.menu li:hover{
+    background-color: white;
+    border-radius: 20%;
+}
+.menu li a:hover{
+    color: black;
+}
+
+.caja3{
+    height: 5vw;
+    width: 10vw;
+    font-size: 10px;
+    padding: 10px;
+    margin: 5px;
+    background-color: white;
+    animation-name: efecto_color ;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-delay: 0s;
+}
+@keyframes efecto_color {
+    0% {width: 10vw }
+    25%{ width: 10vw}
+    50%{width: 10vw;
+    background-color: red;}
+    75%{width: 10vw;}
+    100%{width: 10vw;
+    background-color: yellow;}    
+}
+.aside { grid-area: aside; }
+  
+.section1 {
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    color: rgb(44, 108, 226);
+    display: flex;
+    flex-direction: column;
+    grid-area: section1; 
+}
+.tituloSection{
+    font-size: x-large;
+}
+.preguntasFrecuentes {
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    line-height: 55px;
+}
+.preguntasFrecuentes li{
+    list-style-type: none;
+    margin-top: 20px;
+}
+.preguntasFrecuentes li a{
+    text-decoration: none;
+}
+.preguntasFrecuentes li a:hover{
+    background-color: white;
+    color:black;
+    font-size: x-large;
+    text-decoration: underline;
+}
+.buzonDePreguntas{
+    font-weight: bold;
+    color: black;
+    font-size: large;
+    align-items: flex-end;
+}
+.section2 { 
+    padding: 5px;
+    margin: 10px;
+    grid-area: section2; 
+}
+.tituloSection2{
+    text-align: center;
+    color: rgb(44, 108, 226);
+    font-size: large;
+    display: flex;
+}
+.beneficios{
+    padding: 5px;
+    margin: 10px;
+    text-align: justify;
+    width: 400px;
+    height: 600px;
+    overflow: auto;
+}
+.beneficios h3{
+    text-align: center;
+}
+.beneficios p{
+    font-size: small;
+}
+.parrafo:hover{
+    background-color: white;
+    font-size: large;
+}
+.video{
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    display: flex;
+    align-items: flex-end;
+    opacity: 0.4;
+}
+.cajaDescripcionVideo{
+    text-align: center;
+    padding: 5px;
+    margin: 15px;
+}
+.cajaVideo{
+    margin: 15px;
+    padding: 5px;
+}
+.video:hover{
+    border: solid black 2px;
+    opacity: 1;
+}
+.aside{
+    padding: 5px;
+    margin: 10px;
+}
+.tituloFormulario{
+    text-align: center;
+    color: rgb(44, 108, 226);
+    font-size: 30px;
+    padding: 5px;
+    margin:5px;
+}
+.footer {
+    padding: 5px;
+    margin: 10px;
+    grid-area: footer; 
+    width: auto;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    border: solid black 1px;
+}
+.cajaTextoFooter{
+    text-align: center;
+    color: rgb(44, 108, 226);
+    padding: 5px;
+    margin: 10px;
+}
+.imagenes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.textoContacto{
+    text-align: center;
+}
+.conteiner1 {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 4fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header"
+      "sobreNosotros"
+      "footer";
+      border: solid black;
+}
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: header;
+    padding: 10px;
+    margin: 5px; 
+    top: 5px;
+    background-color: rgb(209, 209, 209);
+}
+.sobreNosotros{
+    padding: 5px;
+    margin: 10px;
+    border: solid black 1px;
+}
+.tituloSobreNosotros{
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+.parrafo1{
+    background-image: url("../img/imagen\ fondo.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500PX;
+    padding: 30PX;
+    margin: 50PX;
+}
+.parrafo1 p{
+    background-color: white;
+    line-height: 2;
+    opacity: .5;
+    font-weight: bold;
+    color: black;
+    padding: 20px;
+}
+.parrafo2 {
+    background-image: url("../img/fondo\ imagen\ 1.webp");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500PX;
+    padding: 30PX;
+    margin: 50PX;
+}
+.parrafo2 p{
+    background-color: white;
+    line-height: 2;
+    opacity: .5;
+    font-weight: bold;
+    color: black;
+    padding: 20px;
+}
+.productosYservicios1{
+    text-align: center;
+    background-image: linear-gradient(to bottom, white, grey);
+    color: rgb(0, 70, 199);
+    padding: 5px;
+    margin: 20px;
+    font-size: 50px;
+    width: auto;
+    height: auto;
+}
+.productosYservicios2{
+    text-align: center;
+    color: rgb(44, 108, 226);
+    font-size: 20px;
+}
+.cajaProductos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px;
+    margin: 20px;
+}
+.cajaTexto:hover{
+    background-color: white;
+    font-size: x-large;
+}
+.cajaBidon{
+    width: 400px;
+    height: 300px;
+    padding: 5px;
+    margin: 20px;
+}
+.cajaSoda{
+    width: 400px;
+    height: 300px;
+    padding: 5px;
+    margin: 20px;
+}
+.cajabotella{
+    width: 400px;
+    height: 300px;
+    padding: 5px;
+    margin: 20px;
+}
+.cajaDispenserFrio-calor{
+    width: 400px;
+    height: 300px;
+    padding: 5px;
+    margin: 20px;
+}
+.cajaDispenserFrio-calor-mesa{
+    width: 400px;
+    height: 300px;
+    padding: 5px;
+    margin: 20px;
+}
+.conteiner1A {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 4fr 1fr;
+    gap: 10px 30px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header"
+      "section1A section1B"
+      "footer footer";
+      border: solid black;
+}
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: header;
+    padding: 10px;
+    margin: 5px; 
+    top: 5px;
+    background-color: rgb(209, 209, 209);
+}
+.section1A, section1B{
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+}
+.tituloPrincipal1A{
+    padding: 5px;
+    margin: 10px;
+    font-size: 50px;
+    text-align: center;
+}
+.legendBuzonConsulta{
+    font-weight: bold;
+    font-size: x-large;
+}
+.textoSubtitulo{
+    text-align: center;
+}
+.textoNoSoyCliente{
+    border: solid black 1px;
+}
+.requisitos{
+    display: flex;
+    flex-direction: column;
+}
+.cajaDatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5px;
+    margin: 10px;
+    margin-left: 40px;
+    width: auto;
+    height: 200px;
+}
+.cajaDatos li{
+    line-height: 20px;
+}
+.cajaTexto1{
+    padding: 5px;
+    text-align: center;
+}
+.cajaTexto1:hover{
+    background-color: white;
+    font-size: x-large;
+
+}
+.ubicacionCliente{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.ubicacionCliente h2{
+    padding: 5px;
+    margin: 10px;
+}
+@media only screen and (max-width:600px){
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "header header"
+          "section2 section1"
+          "section2 aside"
+          "footer footer";
+          border: solid black;
+      }
+}
+@media only screen and (max-width:480px){
+    .container {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "header"
+          "aside"
+          "section2"
+          "section1"
+          "footer";
+          border: solid black;
+      }
+}
+@media only screen and (max-width: 600px){
+    .conteiner1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "header"
+          "sobreNosotros"
+          "sobreNosotros"
+          "footer";
+          border: solid black;
+    }
+}
+@media only screen and (max-width:480px){
+    .conteiner1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "header"
+          "sobreNosotros"
+          "footer";
+          border: solid black;
+      }
+}
+@media only screen and (max-width:600px){
+    .conteiner1A {
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat(4, auto);
+        gap: 10px 30px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "header"
+          "section1A"
+          "section1B"
+          "footer";
+          border: solid black;
+    }
+}
+@media only screen and (max-width:480px){
+    .conteiner1A {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        gap: 10px 30px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "header"
+          "section1A"
+          "section1B"
+          "footer";
+          border: solid black;
+    }
+}

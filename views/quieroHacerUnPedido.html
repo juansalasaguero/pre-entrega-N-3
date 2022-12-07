@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/favicon-16x16.png">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Quiero hacer un pedido</title>
+</head>
+<body>
+    <div class="conteiner1A">
+        <header class="header">
+
+            
+            <div class="caja1">
+                <div class="logo">
+                    <img src="./img/favicon-32x32.png" alt="foto logo">
+                </div>
+                <div class="texto">
+                    <h2>
+                        Descripcion relevante de la empresa
+                    </h2>
+                </div>
+            </div>
+
+            <div class="caja2">
+                <nav>
+                    <ul class="menu">
+                        <li>
+                            <a href="../index.html">
+                                <h2>Menu principal</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../views/sobreNosotros.html">
+                                <h2>Sobre nosotros</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../views/productosYservicios.html">
+                                <h2>Prodcutos y servicios</h2>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="caja3">
+                <a href="../views/quieroHacerUnPedido.html">
+                    <h1 class="pedido">¡Quiero hacer un pedido!</h1>
+                </a>
+            </div>
+
+
+        </header>
+        <section class="section1A">
+            <h1 class="tituloPrincipal1A">
+                SOY CLIENTE
+            </h1>
+            <div class="formularioPedidos">
+                <form action="">
+                    <fieldset>
+                        <br>
+                        <legend class="legendBuzonConsulta">Datos personales</legend>
+                        <div>
+                            <label for="name">CODIGO DE CLIENTE</label>
+                            <input type="text" name="name" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="location">¿QUÈ QUIERO COMPRAR?</label>
+                            <select name="location" id="">
+                                <option value="location">
+                                    Bidon de agua retornable
+                                </option>
+                                <option value="location">
+                                    Sifon de soda retornable
+                                </option>
+                                <option value="location">
+                                    Botellas de agua sin gas
+                                </option>
+                                <option value="location">
+                                    Dispenser de pie frio-calor
+                                </option>
+                                <option value="location">
+                                    Dispenser para mesa frio-calor
+                                </option>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                                <label for="location">
+                                    Tamaño del bidon
+                                </label>
+                                <select name="location" id="">
+                                    <option value="location">
+                                        Bidon 5 Lts
+                                    </option>
+                                    <option value="location">
+                                        Bidon 12Lts
+                                    </option>
+                                    <option value="location">
+                                        Bidon 25 Lts
+                                    </option>
+                                </select>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="number">cuantos</label>
+                                <input type="number" name="nomber">
+                            </div>
+                            <br>
+                            <div>
+                                <label for="choice">¿Tenes bidones para devolver?</label><br>
+                                <input type="radio" name="choice" value="si" required>Si
+                                <input type="radio" name="choice" value="no" required>No
+                            </div>
+                            <br>
+                            <div>
+                                <label for="text">¿Necesita un dispenser?</label> <br>
+                                <input type="radio" name="text" value="si" required>Si
+                                <input type="radio" name="text" value="no" required>No
+                            </div>
+                            <br>
+                            <div>
+                                <label for="numbers">Horario de reparto</label>
+                                <input type="time" name="numbers">
+                                <select name="numbers" id="">
+                                    <option value="numbers">
+                                        Mañana
+                                    </option>
+                                    <option value="numbers">
+                                        Tarde
+                                    </option>
+                                    <option value="numbers">
+                                        Noche
+                                    </option>
+                                </select>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="text">Forma de pago</label>
+                                <select name="text" id="">
+                                    <option value="text">
+                                        Efectivo
+                                    </option>
+                                    <option value="text">
+                                        Cuenta corriente
+                                    </option>
+                                    <option value="text">
+                                        Transferencia
+                                    </option>
+                                </select>
+                            </div>
+                            <br>
+                            <div>
+                                <input type="submit" value="ENVIAR DATOS">
+                                <input type="submit" value="BORRAR DATOS">
+                            </div>
+                            <br>
+                    </fieldset>
+                </form>
+            </div>
+            <br>
+            <div class="buzonConsultas">
+                <form action="">
+                    <fieldset>
+                        <legend class="legendBuzonConsulta">Envianos tu consulta</legend>
+                        <div>
+                            <textarea name="text" id="consultas" cols="50" rows="3"></textarea>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="submit" value="ENVIAR DATOS">
+                            <input type="submit" value="BORRAR DATOS">
+                        </div>
+                        <br>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="buzonQuejas">
+                <form action="">
+                    <fieldset>
+                        <legend class="legendBuzonConsulta">Envianos tu quejas</legend>
+                        <div>
+                            <textarea name="text" id="consultas" cols="50" rows="3"></textarea>
+                        </div>
+                        <div>
+                            <label for="e-mail">Correo electronico</label>
+                            <input type="e-mail" name="e-mail" required>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="submit" value="ENVIAR DATOS">
+                            <input type="submit" value="BORRAR DATOS">
+                        </div>
+                        <br>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+        <section class="section1B">
+            <h1 class="tituloPrincipal1A">
+                NO SOY CLIENTE
+            </h1>
+            <div class="textoNoSoyCliente">
+                <div class="requisitos">
+                    <br>
+                    <h2 class="textoSubtitulo">
+                        Datos que te seran de mucha ayuda
+                    </h2>
+                    <br>
+                    <ol class="cajaDatos">
+                        <li>Acordamos un día y hora de la semana para visitarte.</li>
+                        <li>En cada visita podés decidir si comprar productos o no.</li>
+                        <li>Podés darte de alta o baja cuando quieras sin costo.</li>
+                        <li>Los envases y dispenser natural se entregan en comodato sin costo.</li>
+                        <li>La primer entrega la realizamos antes de las 24hs.</li>
+                        <li>Los pagos los podes hacer en efectivo, al vendedor o por tarjeta de crédito/débito una vez que te entreguemos tus productos.</li>
+                    </ol>
+                    <h3 class="cajaTexto1">
+                        Completa el alta ahora y forma parte de la familia AGUA VIDA.
+                        <br>
+                        Si tenes otra consulta no dudes en llamar al 0800-000-000.
+                    </h3>
+                </div>
+                <div class="cajaTexto1">
+                    <a href="../index.html">Completa nuestro fomrulario y convertite en un nuevo cliente</a>
+                </div>
+                <div class="ubicacionCliente">
+                    <h2>
+                        Para encontrar tu ubicacion de una manera mas rapida y facil dejanos marcado el punto de entrega en el siguiente mapa 
+                    </h2>
+                    <div class="mapa">
+                        <img src="../img/icono-mapa.png" alt="imagen mapa">
+                        <br>
+                        <a class="cajaTexto1" href="https://www.google.com.ar/maps/@-24.8129258,-65.4163422,15z" target="_blank">Mapa</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="cajaTextoFooter">
+                <h2>El agua es vida y el agua limpia significa salud.</h2>
+            </div>
+            <hr>
+            <br>
+            <div class="cajaContacto">
+                <div class="imagenes">
+                    <img src="./img/icono wpp.png" alt="icono wpp">
+                    <img src="./img/icono correo.png" alt="icono correo electronico">
+                    <img src="./img/icono fb.png" alt="icono de facebock">
+                </div>
+                <div class="textoContacto">
+                    <h2>
+                        ¡Contactate con nosotros!
+                    </h2>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
